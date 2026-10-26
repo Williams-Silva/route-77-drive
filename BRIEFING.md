@@ -53,8 +53,8 @@ Ordem atual em `src/routes/index.tsx`: Navbar, Hero, Menu, Combos, Delivery, Tes
 |---|---|
 | WhatsApp | WhatsApp comum (não Business). **[PENDENTE]** número real. Hoje é o placeholder `5500000000000` em `src/lib/site.ts`. |
 | Instagram | Existe. **[PENDENTE]** confirmar o handle (código usa `@rota77burguer`). |
-| Facebook | Existe. **[PENDENTE]** handle/URL. O código não tem Facebook. |
-| TikTok | **Não é rede da marca.** O código tem TikTok (`site.ts`, Social, Footer) e deve ser removido ou trocado por Facebook. |
+| Facebook | Existe. Já está no código (`site.ts`, Social, Footer, commit `2b4a175`). **[PENDENTE]** handle real: `FACEBOOK_HANDLE` usa `rota77burguer`, igual ao do Instagram, só como valor provisório. |
+| TikTok | Não é rede da marca. Removido do código. |
 | N8N | Pretende automatizar. **[PENDENTE]** definir o que automatizar (atendimento, registro de pedido, aviso) e se a página chama webhook. |
 | Cardápio digital | Quer integrar. **[PENDENTE]** definir ferramenta e formato. |
 
@@ -64,13 +64,14 @@ Ordem atual em `src/routes/index.tsx`: Navbar, Hero, Menu, Combos, Delivery, Tes
 - Landing completa de 10 blocos, responsiva, com animações (TanStack Start, React, Tailwind, framer-motion), preparada para Cloudflare.
 - `src/lib/site.ts` centraliza o número do WhatsApp, os handles e `whatsappLink(mensagem)`.
 - Botões de pedido da Navbar, Hero, Combos e CTAFinal usam `whatsappLink` (commit `aa08c0f`).
+- TikTok removido e Facebook adicionado nas redes (commit `2b4a175`).
 - Metadados básicos (título, descrição, Open Graph) em `src/routes/index.tsx`.
 - `bun install --frozen-lockfile && bun run build` passa sem erros.
 
 **Falta**
 - Número real do WhatsApp (um único ponto de troca: `WHATSAPP_NUMBER`).
 - O Footer ainda tem `wa.me/5500000000000` fixo, fora do `site.ts`.
-- Links `#` das redes na seção Social e no Footer, e troca de TikTok por Facebook.
+- Link do Instagram ainda é `#` na seção Social e no Footer (o do Facebook já usa `FACEBOOK_URL`, com handle provisório).
 - Substituir o selo CSS e as imagens pelo logo e pelas fotos reais.
 - Remover ou ocultar Testimonials.
 - Remover o endereço "Rua das Estradas, 77" (Footer e chat de exemplo no Delivery).
