@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Instagram, Music2 } from "lucide-react";
+import { Facebook, Instagram } from "lucide-react";
+import { FACEBOOK_HANDLE, FACEBOOK_URL } from "@/lib/site";
 import burgerRota from "@/assets/burger-rota77.jpg";
 import burgerCarga from "@/assets/burger-carga.jpg";
 import fries from "@/assets/fries.jpg";
@@ -16,15 +17,20 @@ export function Social() {
             <p className="text-xs uppercase tracking-[0.3em] text-neon">// Comunidade</p>
             <h2 className="font-display mt-3 text-5xl sm:text-6xl">A ROTA TÁ <span className="text-neon">BOMBANDO</span></h2>
             <p className="mt-5 text-muted-foreground max-w-md">
-              Marca a Rota 77 nos teus stories, posta no TikTok com a hashtag <span className="text-neon">#FomeNaRota</span>
+              Marca a Rota 77 nos teus stories, posta no Instagram ou no Facebook com a hashtag <span className="text-neon">#FomeNaRota</span>
               e concorre a combos toda semana.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href="#" className="inline-flex items-center gap-2 rounded-full glass px-5 py-3 font-semibold text-foreground hover:bg-neon/10 border-neon">
                 <Instagram className="h-4 w-4 text-neon" /> @rota77burguer
               </a>
-              <a href="#" className="inline-flex items-center gap-2 rounded-full glass px-5 py-3 font-semibold text-foreground hover:bg-neon/10 border-neon">
-                <Music2 className="h-4 w-4 text-neon" /> @rota77
+              <a
+                href={FACEBOOK_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 rounded-full glass px-5 py-3 font-semibold text-foreground hover:bg-neon/10 border-neon"
+              >
+                <Facebook className="h-4 w-4 text-neon" /> @{FACEBOOK_HANDLE}
               </a>
             </div>
           </motion.div>

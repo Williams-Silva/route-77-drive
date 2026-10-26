@@ -18,10 +18,11 @@ export const WHATSAPP_NUMBER = WHATSAPP_PLACEHOLDER;
 export const WHATSAPP_CONFIGURED = WHATSAPP_NUMBER !== WHATSAPP_PLACEHOLDER;
 
 export const INSTAGRAM_HANDLE = "rota77burguer";
-export const TIKTOK_HANDLE = "rota77";
+/** Ainda não confirmado: igual ao do Instagram até o cliente passar o endereço real. */
+export const FACEBOOK_HANDLE = "rota77burguer";
 
 export const INSTAGRAM_URL = `https://instagram.com/${INSTAGRAM_HANDLE}`;
-export const TIKTOK_URL = `https://tiktok.com/@${TIKTOK_HANDLE}`;
+export const FACEBOOK_URL = `https://facebook.com/${FACEBOOK_HANDLE}`;
 
 /**
  * Monta o link do WhatsApp já com a mensagem digitada para o cliente.

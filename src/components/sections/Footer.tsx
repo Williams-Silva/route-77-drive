@@ -1,4 +1,5 @@
-import { Flame, Instagram, MapPin, MessageCircle, Music2 } from "lucide-react";
+import { Facebook, Flame, Instagram, MapPin, MessageCircle } from "lucide-react";
+import { FACEBOOK_URL } from "@/lib/site";
 
 export function Footer() {
   return (
@@ -37,7 +38,7 @@ export function Footer() {
             <div className="flex gap-3">
               <a href="https://wa.me/5500000000000" className="grid h-10 w-10 place-items-center rounded-full glass border-neon hover:bg-neon hover:text-primary-foreground transition"><MessageCircle className="h-4 w-4" /></a>
               <a href="#" className="grid h-10 w-10 place-items-center rounded-full glass border-neon hover:bg-neon hover:text-primary-foreground transition"><Instagram className="h-4 w-4" /></a>
-              <a href="#" className="grid h-10 w-10 place-items-center rounded-full glass border-neon hover:bg-neon hover:text-primary-foreground transition"><Music2 className="h-4 w-4" /></a>
+              <a href={FACEBOOK_URL} target="_blank" rel="noreferrer" aria-label="Facebook" className="grid h-10 w-10 place-items-center rounded-full glass border-neon hover:bg-neon hover:text-primary-foreground transition"><Facebook className="h-4 w-4" /></a>
             </div>
           </div>
         </div>
