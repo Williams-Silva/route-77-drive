@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Flame, Menu, X } from "lucide-react";
 import { useState } from "react";
+import { whatsappLink } from "@/lib/site";
 
 const links = [
   { label: "Cardápio", href: "#menu" },
@@ -36,7 +37,7 @@ export function Navbar() {
           ))}
         </nav>
         <a
-          href="https://wa.me/5500000000000"
+          href={whatsappLink("Olá! Quero fazer um pedido na Rota 77.")}
           target="_blank"
           rel="noreferrer"
           className="hidden md:inline-flex items-center rounded-full bg-gradient-neon px-5 py-2 text-sm font-bold text-primary-foreground shadow-neon hover:shadow-neon-strong transition-shadow"
@@ -58,7 +59,12 @@ export function Navbar() {
               {l.label}
             </a>
           ))}
-          <a href="https://wa.me/5500000000000" className="rounded-full bg-gradient-neon px-5 py-2 text-center font-bold text-primary-foreground">
+          <a
+            href={whatsappLink("Olá! Quero fazer um pedido na Rota 77.")}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-full bg-gradient-neon px-5 py-2 text-center font-bold text-primary-foreground"
+          >
             Pedir agora
           </a>
         </motion.div>

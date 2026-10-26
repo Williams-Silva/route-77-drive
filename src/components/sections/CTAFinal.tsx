@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 import { Particles } from "@/components/Particles";
+import { whatsappLink } from "@/lib/site";
 
 export function CTAFinal() {
   return (
@@ -41,7 +42,9 @@ export function CTAFinal() {
           className="mt-12 flex justify-center"
         >
           <a
-            href="https://wa.me/5500000000000"
+            href={whatsappLink("Olá! Quero fazer um pedido na Rota 77.")}
+            target="_blank"
+            rel="noreferrer"
             className="group relative inline-flex items-center gap-3 rounded-full bg-gradient-neon px-10 py-5 text-lg font-bold text-primary-foreground shadow-neon-strong animate-pulse-glow"
           >
             <MessageCircle className="h-5 w-5" />

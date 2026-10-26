@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Star } from "lucide-react";
 import heroBurger from "@/assets/hero-burger.png";
 import { Particles } from "@/components/Particles";
+import { whatsappLink } from "@/lib/site";
 
 export function Hero() {
   return (
@@ -59,7 +60,9 @@ export function Hero() {
             className="mt-10 flex flex-wrap items-center gap-4"
           >
             <a
-              href="https://wa.me/5500000000000"
+              href={whatsappLink("Olá! Quero fazer um pedido na Rota 77.")}
+              target="_blank"
+              rel="noreferrer"
               className="group relative inline-flex items-center gap-2 rounded-full bg-gradient-neon px-8 py-4 font-bold text-primary-foreground shadow-neon-strong animate-pulse-glow"
             >
               Pedir Agora

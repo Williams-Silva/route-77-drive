@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Clock, Zap } from "lucide-react";
 import combo from "@/assets/combo.jpg";
+import { whatsappLink } from "@/lib/site";
 
 export function Combos() {
   return (
@@ -44,7 +45,9 @@ export function Combos() {
 
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
-                  href="https://wa.me/5500000000000"
+                  href={whatsappLink("Olá! Quero pedir o combo que vi no site da Rota 77.")}
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-flex items-center rounded-full bg-gradient-neon px-7 py-3.5 font-bold text-primary-foreground shadow-neon hover:shadow-neon-strong transition-shadow"
                 >
                   Pedir esse combo
